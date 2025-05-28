@@ -8,7 +8,20 @@ An attempt to automatize [7Speaking](7speaking.com). Works for "My7Speaking" and
 
 
 - Go to [https://user.7speaking.com/home](https://user.7speaking.com/home) or [https://user.7speaking.com/workshop/exams-tests/toeic](https://user.7speaking.com/workshop/exams-tests/toeic) depending on what you want to complete (may not work properly on toeic mode. Please check https://github.com/Dixel1/7speaking-bot-legacy/issues).
-- Let the bot do its work.
+
+- Edit the bot config : ![image](https://github.com/user-attachments/assets/0acc329c-1bf6-43e7-b908-fef4f1019f71)
+
+- Configure the probability of incorrect answers you want : ![image](https://github.com/user-attachments/assets/1ae47b69-c22d-4656-baa5-233aa249702b)
+
+- ⚙️ Put a number between 0.0 and 1.0 (Default error probability is **0.2 (20%)**). 
+
+- Configure the time spending parameter : ![image](https://github.com/user-attachments/assets/725c4389-10bf-4933-bbfb-e0598921d9bd)
+
+- ⚙️ **1** = The bot will wait 60-80% of the real recommended time on the document before starting the Quizz.
+- ⚙️ **0** = The bot will start the Quizz after 10s spent on the document. 
+  
+- Let the bot do its work!
+  
 - Enjoy!
 
 ## Changelogs :
