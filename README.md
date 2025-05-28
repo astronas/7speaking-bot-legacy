@@ -11,6 +11,12 @@ An attempt to automatize [7Speaking](7speaking.com). Works for "My7Speaking" and
 
 ![image](https://github.com/user-attachments/assets/a163702d-0de9-4eb4-a6a2-74893e0516ea)
 
+![image](https://github.com/user-attachments/assets/1ae47b69-c22d-4656-baa5-233aa249702b)
+
+![image](https://github.com/user-attachments/assets/725c4389-10bf-4933-bbfb-e0598921d9bd)
+
+
+
 
 - Go to [https://user.7speaking.com/home](https://user.7speaking.com/home) or [https://user.7speaking.com/workshop/exams-tests/toeic](https://user.7speaking.com/workshop/exams-tests/toeic) depending on what you want to complete (may not work properly on toeic mode. Please check https://github.com/Dixel1/7speaking-bot-legacy/issues).
 - Let the bot do its work.
