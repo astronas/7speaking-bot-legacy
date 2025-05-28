@@ -7,6 +7,10 @@ An attempt to automatize [7Speaking](7speaking.com). Works for "My7Speaking" and
 ![image](https://github.com/Dixel1/7speaking-bot-legacy/assets/63664894/4d7af9cc-8765-4d2f-b4cc-52db5ff5f256)
 
 
+![image](https://github.com/user-attachments/assets/e203c431-6739-4963-af55-a3a3c3b1c69e)
+
+
+
 - Go to [https://user.7speaking.com/home](https://user.7speaking.com/home) or [https://user.7speaking.com/workshop/exams-tests/toeic](https://user.7speaking.com/workshop/exams-tests/toeic) depending on what you want to complete (may not work properly on toeic mode. Please check https://github.com/Dixel1/7speaking-bot-legacy/issues).
 - Let the bot do its work.
 - Enjoy!
