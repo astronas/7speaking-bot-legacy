@@ -11,7 +11,7 @@ An attempt to automatize [7Speaking](7speaking.com). Works for "My7Speaking" and
 
 ## Edit the bot config :
 
-- ![image](https://github.com/user-attachments/assets/0acc329c-1bf6-43e7-b908-fef4f1019f71)
+![image](https://github.com/user-attachments/assets/0acc329c-1bf6-43e7-b908-fef4f1019f71)
 
 ### 1. ⚙️ Configure the probability of incorrect answers you want : ![image](https://github.com/user-attachments/assets/1ae47b69-c22d-4656-baa5-233aa249702b)
 
