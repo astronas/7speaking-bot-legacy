@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         7Speaking Bot Legacy - BETA
 // @namespace    https://github.com/Dixel1
-// @version      8.8
+// @version      8.7b2
 // @description  Automatize 7speaking
 // @author       quantumsheep & Dixel1
 // @match        https://user.7speaking.com/*
