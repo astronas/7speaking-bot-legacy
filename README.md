@@ -15,18 +15,18 @@ An attempt to automatize [7Speaking](7speaking.com). Works for "My7Speaking" and
 
 ### 1. ⚙️ Configure the probability of incorrect answers you want : ![image](https://github.com/user-attachments/assets/1ae47b69-c22d-4656-baa5-233aa249702b)
 
-- ⚙️ Put a number between **0.0** and **1.0** (Default error probability is **0.2 (20%)**). 
+- ➡️ Put a number between **0.0** and **1.0** (Default error probability is **0.2 (20%)**). 
 
 ### 2. ⚙️ Configure the time spending parameter : ![image](https://github.com/user-attachments/assets/725c4389-10bf-4933-bbfb-e0598921d9bd)
 
-- ⚙️ **1** = The bot will wait **60-80%** of the real recommended time on the document before starting the Quizz.
-- ⚙️ **0** = The bot will start the Quizz **after 10s** spent on the document.
+- ➡️ **1** = The bot will wait **60-80%** of the real recommended time on the document before starting the Quizz.
+- ➡️ **0** = The bot will start the Quizz **after 10s** spent on the document.
 
 ### 3. 💾 Save :
 
 - **Ctrl + S** or :
 
-- ![image](https://github.com/user-attachments/assets/c0c75cf0-4c7d-4a00-9306-3cd78af69be5)
+![image](https://github.com/user-attachments/assets/c0c75cf0-4c7d-4a00-9306-3cd78af69be5)
 
 ### 4. 🔄 Refresh the 7speaking page !
   
