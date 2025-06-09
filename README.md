@@ -8,32 +8,67 @@ An attempt to automatize [7Speaking](7speaking.com). Works for "My7Speaking" and
 
 
 - Go to [https://user.7speaking.com/home](https://user.7speaking.com/home) or [https://user.7speaking.com/workshop/exams-tests/toeic](https://user.7speaking.com/workshop/exams-tests/toeic) depending on what you want to complete (may not work properly on toeic mode. Please check https://github.com/Dixel1/7speaking-bot-legacy/issues).
-- Let the bot do its work.
-- Enjoy!
+
+## Edit the bot config :
+
+![image](https://github.com/user-attachments/assets/0acc329c-1bf6-43e7-b908-fef4f1019f71)
+
+### 1. ⚙️ Configure the probability of incorrect answers you want : ![image](https://github.com/user-attachments/assets/1ae47b69-c22d-4656-baa5-233aa249702b)
+
+- ➡️ Put a number between **0.0** and **1.0** (Default error probability is **0.2 (20%)**). 
+
+### 2. ⚙️ Configure the time spending parameter : ![image](https://github.com/user-attachments/assets/725c4389-10bf-4933-bbfb-e0598921d9bd)
+
+- ➡️ **1** = The bot will wait **60-80%** of the real recommended time on the document before starting the Quizz.
+- ➡️ **0** = The bot will start the Quizz **after 10s** spent on the document.
+
+### 3. 💾 Save :
+
+- **Ctrl + S** or :
+
+![image](https://github.com/user-attachments/assets/c0c75cf0-4c7d-4a00-9306-3cd78af69be5)
+
+### 4. 🔄 Refresh the 7speaking page !
+  
+- Let the bot **do its work**!
+  
+- Enjoy! 🎉
 
 ## Changelogs :
 
 Here’s a summary of the changes made to the code:
 
-1. Metadata Block:
-  - Updated the script name to "7Speaking Bot Legacy - BETA" and incremented the version number from 8.5 to 8.7b1. Added a @help field with the value "Juliendnte".
-These updates reflect the new **working** beta version thanks to @juliendnte.
+### 1. **Metadata Block**:
+  - Updated the script name to "7Speaking Bot Legacy - BETA" and incremented the version number from **8.7b1** to **8.7b2**. Added a @tuners field with the value "Astronas". Thanks to @Astronas for the hot features added to the bot.
 
-2. Function findAnswer in completeQuiz:
-- Added a check for container.pendingProps.children[6].props.children[0].props.children.props.answer to retrieve the answer, while retaining the existing check for container.memoizedProps.children[6].props.children[0].props.children.props.answerOptions.answer[0].value.
-This makes the script more robust by ensuring it can retrieve the answer from different property paths. Additionally, the response is converted to a string to handle cases where the response is a number.
+### 2. **Anti-bot popup fix 🚫**:
 
-3. Simulating Keystrokes:
-- When the input type is ‘input’, the code was altered to simulate typing each character of the response using document.execCommand('insertText', false, answer[i]); within a loop.
-This simulates human typing behavior, making the script's actions appear more natural and reducing the likelihood of detection by automated systems.
+- A fix for the **Anti-bot popup** that appeared with a suspicious activity message :
 
-4. Random Response Delay:
-- Adjusted the response delay after entering the answer to be random, ranging between 3 and 8 seconds. This is accomplished using Math.random() to generate a random number, multiplying it by the difference between the maximum and minimum delay, and then adding the minimum delay.
-Adding randomization to delays helps mimic human behavior more closely, making the script's actions less predictable and more natural.
+![image](https://github.com/user-attachments/assets/e203c431-6739-4963-af55-a3a3c3b1c69e)
 
-5. Route Handling:
-- Moved the recursive call to routes() to the end of the routes function.
-This ensures the function is called after all conditions are checked and actions are performed, preventing potential infinite loops or missed route checks.
+- Thanks to the handlePopup function added by @astronas. This function catches the popup and automatically clicks **"Continue"** to allow the script to continue running 🔄.
 
+### 3. **Random incorrect answers 🤔**:
 
-These modifications were implemented to address issues encountered while using the script on the target website. They aim to enhance the script’s compatibility with the specific logic of the website for input detection in form fields, improve functionality, robustness, and mimic human behavior more effectively.
+- ![image](https://github.com/user-attachments/assets/1ae47b69-c22d-4656-baa5-233aa249702b)
+
+- **🆕** A new feature that allows **generating random incorrect answers** to quiz questions with a user-defined probability has been added. This makes the responses more human-like and prevents perfect statistics 📊.
+
+- You just have to modify **"errorProbability"** in the bot-script before use. Default error probability is **0.2 (20%)**.
+
+### 4. **Realistic timing ⏰** :
+
+- ![image](https://github.com/user-attachments/assets/725c4389-10bf-4933-bbfb-e0598921d9bd)
+
+- **🆕** A timing function has been added. By setting the **useRealTime** variable to 1 at the beginning of the script, the script will retrieve the recommended duration from the current activity, minimize it by taking between **60% and 80%** of the value and wait for this time before moving on to the next activity ⏱️ :
+
+- This makes the total time spent on a quiz and its initial document **more realistic** 📚. 
+
+- Simply set this variable to **0** to disable this feature and allow activities to **run consecutively without delay** 🚀.
+
+### 5. **Code comments 📝** :
+
+- The code has been fully commented for better understanding 💡
+
+### These updates aim to improve the script's compatibility and functionality, while enhancing its ability to simulate human behavior 🤖.
